@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class MovementController : MonoBehaviour
@@ -8,16 +9,12 @@ public class MovementController : MonoBehaviour
     public float thrust = 5f;
     public int score = 0;
 
+    public TMP_Text scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void FixedUpdate(){
@@ -43,6 +40,11 @@ public class MovementController : MonoBehaviour
 
     public void AddPoint(){
         score += 1;
-        Debug.Log(score+"/6");
+        if(score == 6){
+            scoreText.text = "You Won!";
+        }else{
+            scoreText.text = "Score: " + score;
+        }
+        
     }
 }
