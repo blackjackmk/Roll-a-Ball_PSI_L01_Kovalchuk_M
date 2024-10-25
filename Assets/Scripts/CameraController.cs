@@ -6,25 +6,24 @@ using UnityEngine.UIElements;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
-    //public MovementController playerController; 
+    public GameObject player; 
 
-    UnityEngine.Vector3 diff_vector;
+    private UnityEngine.Vector3 diff_vector;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        transform.position = player.transform.position + new UnityEngine.Vector3(0, 100, -100);
+        //A = B - C
+        diff_vector = player.transform.position - transform.position;
 
-        //playerController.transform.position = transform.position;
-
-        UnityEngine.Vector3 diff_vector = player.transform.position - transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        //C = B - A
         transform.position = player.transform.position - diff_vector;
     }
 }
