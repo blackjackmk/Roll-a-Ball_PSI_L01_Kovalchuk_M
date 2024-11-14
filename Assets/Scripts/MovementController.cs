@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine;
 
@@ -42,9 +43,16 @@ public class MovementController : MonoBehaviour
         score += 1;
         if(score == 6){
             scoreText.text = "You Won!";
+            NextLevel();
         }else{
             scoreText.text = "Score: " + score;
         }
         
+    }
+
+    public void NextLevel(){
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1, LoadSceneMode.Single);
+        //if not exist next level, go to main menu
     }
 }
