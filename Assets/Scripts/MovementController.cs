@@ -1,17 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
-using TMPro;
 using UnityEngine;
+using System;
 
 public class MovementController : MonoBehaviour
 {
     public Rigidbody rb;
     public float thrust = 5f;
-    public int score = 0;
 
-    public TMP_Text scoreText;
-
+    public event Action pickupEvent;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -39,18 +37,6 @@ public class MovementController : MonoBehaviour
     }
 
     public void AddPoint(){
-        score += 1;
-        if(score == 6){
-            scoreText.text = "You Won!";
-            NextLevel();
-        }else{
-            scoreText.text = "Score: " + score;
-        }
-        
-    }
-
-    public void NextLevel(){
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1, LoadSceneMode.Single);
+        pickupEvent();
     }
 }

@@ -21,7 +21,7 @@ public class Collectible : MonoBehaviour
     void OnTriggerEnter(Collider collider){
         collider.gameObject.GetComponent<MovementController>().AddPoint();
         audioSource.Play();
-        Invoke("DestroyCollectible", 1.3f);
+        Invoke(nameof(DestroyCollectible), 1.3f);
     }
 
     private void DestroyCollectible(){
