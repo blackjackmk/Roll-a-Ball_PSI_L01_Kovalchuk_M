@@ -19,18 +19,18 @@ public class MovementController : MonoBehaviour
     }
 
     void FixedUpdate(){
-        if(Input.GetKey(KeyCode.LeftArrow)){
+        if(Input.GetKey(KeyCode.A)){
             //rb.AddForce(0, 0, -thrust,ForceMode.Impulse);
             //rb.AddForce(Vector3.left * thrust);
             rb.AddForce(new Vector3(0,0,-1) * thrust);
         }
-        if(Input.GetKey(KeyCode.RightArrow)){
+        if(Input.GetKey(KeyCode.D)){
             rb.AddForce(new Vector3(0,0,1) * thrust);
         }
-        if(Input.GetKey(KeyCode.UpArrow)){
+        if(Input.GetKey(KeyCode.W)){
             rb.AddForce(new Vector3(-1,0,0) * thrust);
         }
-        if(Input.GetKey(KeyCode.DownArrow)){
+        if(Input.GetKey(KeyCode.S)){
             rb.AddForce(new Vector3(1,0,0) * thrust);
         }
         if(Input.GetButtonUp("Jump")){

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -18,6 +20,11 @@ public class Collectible : MonoBehaviour
 
     void OnTriggerEnter(Collider collider){
         collider.gameObject.GetComponent<MovementController>().AddPoint();
+        audioSource.Play();
+        Invoke("DestroyCollectible", 1.3f);
+    }
+
+    private void DestroyCollectible(){
         gameObject.SetActive(false);
     }
 }
