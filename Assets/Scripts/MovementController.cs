@@ -36,7 +36,6 @@ public class MovementController : MonoBehaviour
         if(Input.GetButtonUp("Jump")){
             rb.AddForce(new Vector3(0,1,0) * thrust);
         }
-
     }
 
     public void AddPoint(){
@@ -53,6 +52,5 @@ public class MovementController : MonoBehaviour
     public void NextLevel(){
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1, LoadSceneMode.Single);
-        //if not exist next level, go to main menu
     }
 }
