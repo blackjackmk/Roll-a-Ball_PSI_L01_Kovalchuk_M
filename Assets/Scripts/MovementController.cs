@@ -8,6 +8,8 @@ public class MovementController : MonoBehaviour
     public Rigidbody rb;
     public float thrust = 5f;
 
+    private Vector3 moveDirection;
+
     public event Action pickupEvent;
     
     // Start is called before the first frame update
@@ -16,24 +18,23 @@ public class MovementController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate(){
+    void Update(){
         if(Input.GetKey(KeyCode.A)){
-            //rb.AddForce(0, 0, -thrust,ForceMode.Impulse);
-            //rb.AddForce(Vector3.left * thrust);
-            rb.AddForce(new Vector3(0,0,-1) * thrust);
+            moveDirection = new Vector3(0,0,-1);
         }
         if(Input.GetKey(KeyCode.D)){
-            rb.AddForce(new Vector3(0,0,1) * thrust);
+            moveDirection = new Vector3(0,0,1);
         }
         if(Input.GetKey(KeyCode.W)){
-            rb.AddForce(new Vector3(-1,0,0) * thrust);
+            moveDirection = new Vector3(-1,0,0);
         }
         if(Input.GetKey(KeyCode.S)){
-            rb.AddForce(new Vector3(1,0,0) * thrust);
+            moveDirection = new Vector3(1,0,0);
         }
-        if(Input.GetButtonUp("Jump")){
-            rb.AddForce(new Vector3(0,1,0) * thrust);
-        }
+    }
+
+    void FixedUpdate(){
+        rb.AddForce(moveDirection * thrust);
     }
 
     public void AddPoint(){
