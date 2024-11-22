@@ -21,10 +21,12 @@ public class Collectible : MonoBehaviour
     void OnTriggerEnter(Collider collider){
         collider.gameObject.GetComponent<MovementController>().AddPoint();
         audioSource.Play();
-        //Invoke(nameof(DestroyCollectible), 1.3f);
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        Invoke(nameof(DestroyCollectible), 1.3f);
     }
 
-    // private void DestroyCollectible(){
-    //     gameObject.SetActive(false);
-    // }
+    private void DestroyCollectible(){
+        gameObject.SetActive(false);
+    }
 }
