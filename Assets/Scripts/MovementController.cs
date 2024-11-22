@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UIElements;
 
 public class MovementController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class MovementController : MonoBehaviour
     private Vector3 moveDirection;
 
     public event Action pickupEvent;
+
     
     // Start is called before the first frame update
     void Start()
@@ -19,18 +21,23 @@ public class MovementController : MonoBehaviour
     }
 
     void Update(){
+
+        moveDirection = Vector3.zero;
+
         if(Input.GetKey(KeyCode.A)){
-            moveDirection = new Vector3(0,0,-1);
+            moveDirection += new Vector3(0,0,-1);
         }
         if(Input.GetKey(KeyCode.D)){
-            moveDirection = new Vector3(0,0,1);
+            moveDirection += new Vector3(0,0,1);
         }
         if(Input.GetKey(KeyCode.W)){
-            moveDirection = new Vector3(-1,0,0);
+            moveDirection += new Vector3(-1,0,0);
         }
         if(Input.GetKey(KeyCode.S)){
-            moveDirection = new Vector3(1,0,0);
+            moveDirection += new Vector3(1,0,0);
         }
+
+        moveDirection.Normalize();
     }
 
     void FixedUpdate(){

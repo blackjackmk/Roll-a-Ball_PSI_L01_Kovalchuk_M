@@ -244,7 +244,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &225362617
 Transform:
@@ -352,7 +352,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &271252331
 Transform:
@@ -637,7 +637,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &539424464
 Transform:
@@ -1669,6 +1669,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Muzyka
       objectReference: {fileID: 0}
+    - target: {fileID: 5871485933291630790, guid: 763ad822aafd434c49eaa0ba6112a662, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 6367eba9b06faf76f8fc1dd899daee74, type: 3}
+    - target: {fileID: 5871485933291630790, guid: 763ad822aafd434c49eaa0ba6112a662, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6367eba9b06faf76f8fc1dd899daee74, type: 3}
     - target: {fileID: 6612623759196504889, guid: 763ad822aafd434c49eaa0ba6112a662, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2292,7 +2300,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1873629779
 Transform:
