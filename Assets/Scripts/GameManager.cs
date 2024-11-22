@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         score++;
         if(score == MaxCoins){
             scoreText.text = "You Won!";
-            NextLevel();
+            Invoke(nameof(NextLevel), 2f);
             score = 0;
         }else{
             scoreText.text = "Score: " + score;

@@ -119,6 +119,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &144930573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 144930575}
+  - component: {fileID: 144930574}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!220 &144930574
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144930573}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 1, y: 0.27501643, z: 8.714798}
+  - {x: 1, y: 0.27501643, z: -9.011494}
+  - {x: 1, y: -1.3996361, z: 8.714798}
+  - {x: 1, y: -1.3996361, z: -9.011494}
+  - {x: -1.1812553, y: 0.27501643, z: 8.714798}
+  - {x: -1.1812553, y: 0.27501643, z: -9.011494}
+  - {x: -1.1812553, y: -1.3996361, z: 8.714798}
+  - {x: -1.1812553, y: -1.3996361, z: -9.011494}
+  m_Dering: 1
+--- !u!4 &144930575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144930573}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
+  m_LocalScale: {x: 7.3469, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &225387884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1381,6 +1431,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1985684944}
     - target: {fileID: 1456991915223666002, guid: 6e9cacf1a6ed3247481df91c9f067376, type: 3}
+      propertyPath: thrust
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456991915223666002, guid: 6e9cacf1a6ed3247481df91c9f067376, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1336667256}
@@ -1656,3 +1710,4 @@ SceneRoots:
   - {fileID: 1104979950}
   - {fileID: 6728365449587701830}
   - {fileID: 8963918937702384301}
+  - {fileID: 144930575}
