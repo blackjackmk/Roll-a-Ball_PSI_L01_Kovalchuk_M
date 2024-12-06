@@ -12,12 +12,6 @@ public class Collectible : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Rotate(0, 10 * Time.deltaTime, 0, Space.World);
-    }
-
     void OnTriggerEnter(Collider collider){
         collider.gameObject.GetComponent<MovementController>().AddPoint();
         audioSource.Play();

@@ -9,17 +9,17 @@ public class GameManager : MonoBehaviour
     
     GameObject player;
     public int score = 0;
-    private int MaxCoins;
+    private int _maxCoins;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<MovementController>().pickupEvent += ScoreUpdate;
-        MaxCoins = GameObject.FindGameObjectsWithTag("Collectible").Length;
+        _maxCoins = GameObject.FindGameObjectsWithTag("Collectible").Length;
     }
 
     private void ScoreUpdate(){
         score++;
-        if(score == MaxCoins){
+        if(score == _maxCoins){
             scoreText.text = "You Won!";
             Invoke(nameof(NextLevel), 2f);
             score = 0;
