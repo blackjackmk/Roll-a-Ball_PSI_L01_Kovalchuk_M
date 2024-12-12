@@ -1195,7 +1195,7 @@ PrefabInstance:
     - target: {fileID: 4401456412659130032, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
       propertyPath: rock_material
       value: 
-      objectReference: {fileID: 2100000, guid: 4e19d344e0bbe1e828e8f6e8382e4d90, type: 2}
+      objectReference: {fileID: 2100000, guid: 265c1517f551bbb4db1a48e2201a96f7, type: 2}
     - target: {fileID: 4401456412659130032, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
       propertyPath: volley_material
       value: 
