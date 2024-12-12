@@ -272,7 +272,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101767035}
   serializedVersion: 4
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -290,7 +290,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &101767038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1048,7 +1048,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447327014}
   serializedVersion: 4
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1066,7 +1066,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1447327017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1171,7 +1171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4300520769795486908, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.88
+      value: -13.37
       objectReference: {fileID: 0}
     - target: {fileID: 4300520769795486908, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1179,7 +1179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4300520769795486908, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.62
+      value: 13.29
       objectReference: {fileID: 0}
     - target: {fileID: 4300520769795486908, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1217,6 +1217,10 @@ PrefabInstance:
       propertyPath: volley_material
       value: 
       objectReference: {fileID: 2100000, guid: edcfd0a5751a2c614b693dadf3f09d8a, type: 2}
+    - target: {fileID: 5319574350565122508, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5319574350565122508, guid: 0a772011af4a0c0af987269495c8f072, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
@@ -1412,7 +1416,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096874156}
   serializedVersion: 4
-  m_Mass: 0.01
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1430,7 +1434,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2096874159
 BoxCollider:
   m_ObjectHideFlags: 0
