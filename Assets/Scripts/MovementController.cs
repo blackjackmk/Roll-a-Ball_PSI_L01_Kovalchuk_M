@@ -45,7 +45,7 @@ public class MovementController : MonoBehaviour
             GetComponent<MeshRenderer> ().material = material;
         }
         if(Input.GetKey(KeyCode.Alpha2)){//rock
-            rb.mass = 30.0f;
+            rb.mass = 10.0f;
             GetComponent<MeshRenderer> ().material = rock_material;
             
         }
