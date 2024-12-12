@@ -241,7 +241,6 @@ GameObject:
   - component: {fileID: 101767038}
   - component: {fileID: 101767037}
   - component: {fileID: 101767041}
-  - component: {fileID: 101767042}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -258,8 +257,8 @@ Transform:
   m_GameObject: {fileID: 101767035}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.26, y: 2.7342, z: -1.88}
-  m_LocalScale: {x: 1, y: 1.1139, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1819725594}
@@ -289,7 +288,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!65 &101767038
 BoxCollider:
@@ -377,22 +376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acf147b7462f2f8098f7c85f51e29e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!138 &101767042
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101767035}
-  serializedVersion: 1
-  m_ConnectedBody: {fileID: 1447327016}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 0.001
-  m_BreakTorque: Infinity
-  m_EnableCollision: 1
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!1001 &108297407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1034,8 +1017,8 @@ Transform:
   m_GameObject: {fileID: 1447327014}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.26, y: 1.588, z: -1.22}
-  m_LocalScale: {x: 1, y: 1.1139, z: 1}
+  m_LocalPosition: {x: 0, y: 1.019, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1819725594}
@@ -1065,7 +1048,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 42
   m_CollisionDetection: 3
 --- !u!65 &1447327017
 BoxCollider:
@@ -1363,7 +1346,7 @@ Transform:
   m_GameObject: {fileID: 1819725593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.692263, y: -2.8062139, z: -3.9789944}
+  m_LocalPosition: {x: -17.04, y: -1.262, z: 0.298}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1402,8 +1385,8 @@ Transform:
   m_GameObject: {fileID: 2096874156}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.26, y: 1.588, z: -2.51}
-  m_LocalScale: {x: 1, y: 1.1139, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1819725594}

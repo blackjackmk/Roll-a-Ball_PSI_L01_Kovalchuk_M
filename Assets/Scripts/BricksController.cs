@@ -1,5 +1,6 @@
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BricksController : MonoBehaviour
 {
@@ -15,9 +16,6 @@ public class BricksController : MonoBehaviour
         if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<Rigidbody>().mass >= 10.00f)
         {
             rb.constraints = RigidbodyConstraints.None;
-        }else if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<Rigidbody>().mass < 10.00f)
-        {
-            rb.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
 }
