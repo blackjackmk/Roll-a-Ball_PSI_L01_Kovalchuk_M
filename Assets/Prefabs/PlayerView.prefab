@@ -149,10 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5c4f48664b75a8a8283f912cca976a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 5319574350565122508}
-  rock_material: {fileID: 2100000, guid: 4e19d344e0bbe1e828e8f6e8382e4d90, type: 2}
+  rock_material: {fileID: 2100000, guid: 265c1517f551bbb4db1a48e2201a96f7, type: 2}
   volley_material: {fileID: 2100000, guid: edcfd0a5751a2c614b693dadf3f09d8a, type: 2}
-  thrust: 5
 --- !u!1 &3759188644701942449
 GameObject:
   m_ObjectHideFlags: 0
