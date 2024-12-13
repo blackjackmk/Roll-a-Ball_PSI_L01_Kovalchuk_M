@@ -4,8 +4,9 @@ public class RotatingWalls : MonoBehaviour
 {
 
     public GameObject center;
-    public int speed = 10;
+    private int speed = 10;
     public int right = 1;
+
     // Update is called once per frame
     void Update()
     {

@@ -6,11 +6,11 @@ using UnityEngine.UIElements;
 
 public class MovementController : MonoBehaviour
 {
-    public Rigidbody rb;
+    private Rigidbody rb;
     private Material material;
-    public Material rock_material;
-    public Material volley_material;
-    public float thrust = 5f;
+    private Material rock_material;
+    private Material volley_material;
+    private float thrust = 5f;
 
     private Vector3 moveDirection;
 

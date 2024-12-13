@@ -1627,7 +1627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 899953031}
-  speed: 16
   right: -1
 --- !u!1 &1403227389
 GameObject:
@@ -1745,7 +1744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1757243275}
-  score: 0
 --- !u!1 &1761963543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,7 +2334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 899953031}
-  speed: 8
   right: 1
 --- !u!4 &2059764491 stripped
 Transform:
