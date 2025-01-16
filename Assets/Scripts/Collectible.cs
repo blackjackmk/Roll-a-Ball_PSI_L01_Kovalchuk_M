@@ -6,8 +6,6 @@ public class Collectible : MonoBehaviour
 {
     private AudioSource audioSource;
     private ParticleSystem particle;
-    private Color uncollectedColor = new Color(0.5f, 0.5f, 0.5f, 1.0f);
-    private Color collectedColor = new Color(0.5f, 0.5f, 0.5f, 0.0f);
 
     // Start is called before the first frame update
     void Start()

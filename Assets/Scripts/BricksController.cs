@@ -16,6 +16,7 @@ public class BricksController : MonoBehaviour
         if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<Rigidbody>().mass >= 10.00f)
         {
             rb.constraints = RigidbodyConstraints.None;
+            Debug.Log("Rigidbody constraints removed on collision!");
         }
     }
 }
