@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SecondPlane.unity
     guid: 786c4917fac71a92087c6a873d48bfd0
   - enabled: 1
+    path: Assets/Scenes/ThirdPlane.unity
+    guid: 044457c6ffde5aeeeb5de44cc87a3c1b
+  - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 86c19d0cd81a881a38bafa1ffd336222
   m_configObjects: {}
