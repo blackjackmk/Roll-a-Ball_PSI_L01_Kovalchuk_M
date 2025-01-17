@@ -1,0 +1,3 @@
+QMS - Cartoon Skybox Pack FREE :: https://assetstore.unity.com/packages/2d/textures-materials/sky/qms-cartoon-skybox-pack-free-301624
+Hand Painted Rocks-Road Texture :: https://assetstore.unity.com/packages/2d/textures-materials/hand-painted-rocks-road-texture-196235
+Basic Toon Water Shader - Built-In :: https://assetstore.unity.com/packages/vfx/shaders/basic-toon-water-shader-built-in-303293
